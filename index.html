@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Depressing Weather</title>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Matthew Bryan Curtis" />
+	<meta name="robots" content="index, follow" />
+	<meta name="revisit-after" content="14 days" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="A weather site that might make you feel better about where you are.">
+
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!--Font Awesome-->
@@ -10,18 +19,30 @@
 </head>
 
 <body>
-	<div class="containter">
+	<div id="containter">
 
+		<div class="row" id="top">
+			<h1>Have a Nice Day</h1>
+		</div>
 		<div class="row">
-			<div class="col-xs-12 col-md-4">
-			</div>
-			<div class="col-xs-12 col-md-4" id="local-container">
-				<p class="location" id="local-location"></p>
-				<p class="temp" id="local-temp"></p>
-				<p class="details" id="local-details"></p>
-			</div>
-			<div class="col-xs-12 col-md-4">
-			</div>
+			<section class="col-xs-12 col-md-4" id="cold-weather">
+				<p class="location"></p>
+				<p class="temp"></p>
+				<p class="weather"></p>
+			</section>
+			<section class="col-xs-12 col-md-4" id="local-weather">
+				<p class="location"></p>
+				<p class="temp"></p>
+				<p class="weather"></p>
+			</section>
+			<section class="col-xs-12 col-md-4" id="hot-weather">
+				<p class="location"></p>
+				<p class="temp"></p>
+				<p class="weather"></p>
+			</section>
+		</div>
+		<div class="row" id="bottom">
+			<a href="https://twitter.com/intent/tweet?text=It%20could%20be%20worse%20outside%2E%20%23DepressingWeather&url=http://bit.ly/1QUl1mo"><i class="fa fa-twitter" id="twit" aria-hidden="true"></i></a>
 		</div>
 
 	</div>
@@ -29,8 +50,6 @@
 
 	<!--jQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<!--Bootstrap-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<!--Custom-->
+	<!--My JS -->
 	<script src="scripts/main.js"></script>
 </html>

@@ -1,27 +1,56 @@
 /** { border: 1px solid black; }*/
 body {
-	background-color: gray;
+	background-color: white;
 	color: white;
-	padding-top: 20px;
-}
-
-#local-container {
-	margin: auto;
-	font-size: 1.5em;
 	text-align: center;
+	padding: 3px;
+	/*text-shadow: 1px 1px 2px #d3d3d3;*/
+}
+
+section {
+	margin: auto;
+	padding: 40px;
+	font-size: 1.5em;
 	display: none;
+	border: 3px solid white;
 }
 
-.location {
-	font-size: 2em;
+h1, #twit {
+	margin: 0px;
+	padding: 20px;
 }
 
-.temp {
-	font-size: 4.5em;
+#cold-weather, #bottom {
+	background-color: #BCF1ED;
+	border: 3px solid white;
+}
+
+#local-weather {
+	background-color: #FDEDD0;
+	border: 3px solid white;
+}
+
+#hot-weather, #top {
+	background-color: #FFC7B9;
+	border: 3px solid white;
+}
+
+.temp, #twit {
+	font-size: 4em;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: white;
 }
 
 p {
 	margin: 0px;
 	padding: 0px;
 	line-height: 90%;
+}
+
+@media all and (min-width: 62em) {
+	body {
+		padding-top: 60px;
+	}
 }
