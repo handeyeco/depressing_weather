@@ -19,7 +19,7 @@ var currLoc = {
 function weatherQuery (currLoc) {
 	var owmLocal = "http://api.openweathermap.org/data/2.5/weather?lat=" + currLoc.latitude + "&lon=" + currLoc.longitude + "&units=imperial&APPID=061f24cf3cde2f60644a8240302983f2";
 	var owmCold = "http://api.openweathermap.org/data/2.5/weather?lat=" + -78.463889 + "&lon=" + 106.8375 + "&units=imperial&APPID=061f24cf3cde2f60644a8240302983f2";
-	var owmHot = "http://api.openweathermap.org/data/2.5/weather?lat=" + 14.238611 + "&lon=" + 40.293889 + "&units=imperial&APPID=061f24cf3cde2f60644a8240302983f2";
+	var owmHot = "http://api.openweathermap.org/data/2.5/weather?lat=" + 36.246944 + "&lon=" + -116.816944 + "&units=imperial&APPID=061f24cf3cde2f60644a8240302983f2";
 
 	$.getJSON(owmLocal, function (result) {
 		weatherObjects[0] = new WeatherStat ("#local-weather", currLoc, result);
@@ -30,7 +30,7 @@ function weatherQuery (currLoc) {
 		updateSection(weatherObjects[1]);
 	});
 	$.getJSON(owmHot, function (result) {
-		weatherObjects[2] = new WeatherStat ("#hot-weather", {city: "Dallol", region: "Ethiopia"}, result);
+		weatherObjects[2] = new WeatherStat ("#hot-weather", {city: "Death Valley", region: "CA"}, result);
 		updateSection(weatherObjects[2]);
 	});
 }
