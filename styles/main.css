@@ -19,17 +19,20 @@ h1, #twit {
 }
 
 #cold-weather, #bottom {
-	background-color: #BCF1ED;
+	/* old color: BCF1ED */
+	background-color: #6EF0E6;
 	border: 3px solid white;
 }
 
 #local-weather {
-	background-color: #FDEDD0;
+	/* old color: FDEDD0 */
+	background-color: #FFD68D;
 	border: 3px solid white;
 }
 
 #hot-weather, #top {
-	background-color: #FFC7B9;
+	/* old color: FFC7B9 */
+	background-color: #FFA18A;
 	border: 3px solid white;
 }
 
